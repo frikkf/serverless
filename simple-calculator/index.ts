@@ -4,7 +4,8 @@ export const index = (context: any, req: any) => {
     
     const first: number = Number(req.query.first);
     const second: number = Number(req.query.second);
-    const result = first+second;
+    const third: number = Number(req.query.third);
+    const result = first+second+third;
     context.res = {
       // status: 200, /* Defaults to 200 */
       body: ""+result
