@@ -5,7 +5,7 @@ exports.index = function (context, req) {
         var first = Number(req.query.first);
         var second = Number(req.query.second);
         var third = Number(req.query.third);
-        var result = first + second + third;
+        var result = first + (2 * second) + third;
         context.res = {
             // status: 200, /* Defaults to 200 */
             body: "" + result
